@@ -110,11 +110,6 @@ jobs:
         shell: pwsh
         run: Get-Item "dist\Colr Pak.exe"
 
-      - name: Install NSIS
-        uses: repolevedavaj/install-nsis@v1.0.3
-        with:
-          nsis-version: "3.10"
-
       - name: Compile NSIS installer
         uses: joncloud/makensis-action@v4.1
         with:
