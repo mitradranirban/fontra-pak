@@ -6,6 +6,12 @@ built on [Fontra](https://github.com/fontra/fontra) and
 [fontra-compile](https://github.com/fontra/fontra-compile).
 
 ---
+## [v0.6.1] - 2026-05-06
+### Fixed
+**fontra-color-support**
+
+fix(paint-tool): correct PaintTransform bounding box origin and eliminate fallback flash
+
 ## [v0.6.0] - 2026-04-28
 
 ### Added
