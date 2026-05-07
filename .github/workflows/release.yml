@@ -110,6 +110,9 @@ jobs:
         shell: pwsh
         run: Get-Item "dist\Colr Pak.exe"
 
+      - name: Install NSIS via Chocolatey
+        run: choco install nsis --version 3.10 -y
+
       - name: Compile NSIS installer
         uses: joncloud/makensis-action@v4.1
         with:
