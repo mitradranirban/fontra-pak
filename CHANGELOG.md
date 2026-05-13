@@ -6,6 +6,34 @@ built on [Fontra](https://github.com/fontra/fontra) and
 [fontra-compile](https://github.com/fontra/fontra-compile).
 
 ---
+## [0.7.0] - 2025-05-13
+
+### ✨ New Features
+- **COLRv0 Support:** Complete implementation of COLRv0 glyph loading and saving fron `.ttf` and `otf` sources.
+- **UFO Color Layer Mapping:** Added support for the `com.github.googlei18n.ufo2ft.colorLayerMapping` protocol. This ensures that color layers are correctly associated with palette indices when exporting to UFO, enabling a seamless roundtrip between OpenType and UFO formats.
+
+- **Enhanced Color UI:**
+    - Added a new WIP **Color Graph** editor component for advanced visual COLRv1 manipulation.
+    - Added support for **ClipBoxes**, allowing users to define and edit bounding areas for color glyphs.
+    - Added rendering support for COLR v0 layers in default palette color (Changing of palette functionality to be added later).
+
+### 🛠 Improvements & Refactoring
+- **Glyph Grid Optimization:** Internal color components (e.g., `.color.0` glyphs) are now hidden from the main glyph list to reduce clutter, while remaining fully accessible through the parent glyph's Layers panel.
+- **Variable Font Instancing:** Improved the `VarStoreInstancer` logic to handle color-specific variations (deltas) in paints and clip boxes more accurately across different axis locations.
+- **COLRv1 Architecture:** Consolidated the paint graph unbuilding logic to handle both `colrPaintGraphs` and `colrGlyphPaintEntries` through a unified processing pipeline.
+
+### 🌍 Internationalization (i18n)
+- Added localized strings for several languages (including Chinese, Japanese, Korean, French, German, and Spanish) for new color-related UI elements:
+    - `Color Graph`
+    - `Clip Box`
+    - `Transform Glyph`
+    - `Add keyframe at current axis location`
+
+### 🐛 Bug Fixes
+- Fixed a syntax error in `opentype.py` that caused initialization failures when loading fonts with specific COLR versions.
+- Fixed an issue where the standard UFO layer naming convention (`color.n`) was not being correctly applied during glyph loading.
+- Corrected a bug where CFF2 compatibility checks were not being applied to generated color layers.
+
 ## [v0.6.1] - 2026-05-06
 ### Fixed
 **fontra-color-support**
