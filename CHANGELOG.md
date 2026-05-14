@@ -6,6 +6,25 @@ built on [Fontra](https://github.com/fontra/fontra) and
 [fontra-compile](https://github.com/fontra/fontra-compile).
 
 ---
+## [0.7.1] -2025-05-15
+
+### ColrPak Main
+**fix: ensure read-only checkbox defaults to unselected***
+
+- Added `type=bool` to `applicationSettings.value("openFontsInReadOnlyMode")` in ColrPakMain.py. This prevents PyQt from evaluating string values like "false" as truthy, ensuring the checkbox correctly defaults to an unchecked state.
+
+### fontra-color-support
+**fix(backend): move color palettes to component UFO libs**
+
+- The designspace backend was improperly saving color palettes and layer
+mappings into the .designspace lib. This commit intercepts both keys in
+`putCustomData`, discarding the layer mapping (handled per-glyph) and
+distributing the color palettes to the lib.plist of every source UFO.
+`getCustomData` is updated to read the palettes from the default UFO.
+- Prevents `colorLayers` and `colorLayerMapping` from remaining in the `.designspace` file by stripping all ufo2ft color keys in `putCustomData`.
+- Updates `getCustomData` to proactively strip cached designspace color keys so they don't leak back into the Fontra UI on reload.
+
+
 ## [0.7.0] - 2025-05-13
 
 ### ✨ New Features
