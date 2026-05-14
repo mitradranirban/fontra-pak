@@ -51,6 +51,8 @@ Your fonts stay entirely on your computer and are never uploaded anywhere.
 ---
 ## Download
 
+![GitHub all releases](https://img.shields.io/github/downloads/mitradranirban/colr-pak/total)
+
 |**Linux**| |**Linux**| |**Microsoft Windows**|  |**Mac Os**|
 |---|---|---|---|---|---|---|
 | (x86_64)| |(arm64) | | (10 and 11)||(Apple Silicon M1/M2/M3/M4 and Intel)|
