@@ -6,7 +6,10 @@ built on [Fontra](https://github.com/fontra/fontra) and
 [fontra-compile](https://github.com/fontra/fontra-compile).
 
 ---
-## [0.7.1] -2025-05-15
+## [0.7.2] - 2025-05-17
+### fontra-color-support
+**fix designspace backend** to keep default layer unmapped in layer-name lib
+## [0.7.1] - 2025-05-15
 
 ### ColrPak Main
 **fix: ensure read-only checkbox defaults to unselected***
