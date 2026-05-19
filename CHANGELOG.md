@@ -2,13 +2,24 @@
 
 All notable changes to Colr Pak and its components are documented here.
 Colr Pak is a fork of [Fontra Pak](https://github.com/fontra/fontra-pak),
-built on [Fontra](https://github.com/fontra/fontra) and
-[fontra-compile](https://github.com/fontra/fontra-compile).
+built on customized version of  [Fontra](https://github.com/mitradranirban/fontra) and
+[fontra-compile](https://github.com/mitradranirban/fontra-compile).
 
 ---
+## [0.7.3] - 2025-0519
+### fontra-color-support
+**Added**
+
+**Palette selector** in Color Graph Panel which render the selected glyph's paint or layers in selected palette's color
+
+**Fixed**
+
+Fixed error when saving custom data (color palettes) in single-UFO projects by using defaultWriter instead of defaultReader in UFOBackend.putCustomData
+
 ## [0.7.2] - 2025-05-17
 ### fontra-color-support
 **fix designspace backend** to keep default layer unmapped in layer-name lib
+
 ## [0.7.1] - 2025-05-15
 
 ### ColrPak Main
