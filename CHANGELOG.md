@@ -6,6 +6,19 @@ built on customized version of  [Fontra](https://github.com/mitradranirban/fontr
 [fontra-compile](https://github.com/mitradranirban/fontra-compile).
 
 ---
+## [0.7.4] - 2026-05-25
+### fontra-color-support
+
+**Fixed**
+
+**fix(color-layers): rewrite `_convertV0toV1` to correctly migrate COLRv0 to COLRv1**
+
+- Fixed conversion bypassing `_writeV1Paint`, which caused `fontra.colrv1.referencedGlyphs` to never be populated via `collectReferencedGlyphs`, breaking downstream glyph reference tracking.
+- Fixed `PaintGlyph.glyph` references using bare suffixes (e.g. `color.0`) instead of parent-namespaced names (e.g. `A.color.0`), which caused naming collisions and file names inconsistent with the Fontra layer naming convention.
+- Fixed conversion never creating the standalone top-level glyphs that COLRv1 `PaintGlyph` nodes reference, leaving dangling references that failed at compile time.
+- Fixed variable font support: all active masters are now iterated so each source's sibling layer geometry (`bold^color.0`, `light^color.0`, etc.) is copied into the new referenced glyph, enabling correct interpolation across the design space.
+- Fixed V0 sibling layers (`default^color.0`, etc.) not being deleted after conversion, leaving orphaned data in the parent glyph.
+- Fixed the stale root-level `colorv1` safety guard running inside the wrong conditional block, causing it to silently skip cle
 ## [0.7.3] - 2025-0519
 ### fontra-color-support
 **Added**
