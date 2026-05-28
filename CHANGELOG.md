@@ -6,6 +6,23 @@ built on customized version of  [Fontra](https://github.com/mitradranirban/fontr
 [fontra-compile](https://github.com/mitradranirban/fontra-compile).
 
 ---
+## [0.7.5] - 2026-05-28
+### fontra-color-support
+
+**Changed**
+- Migrated panel-color-graph from JavaScript to TypeScript.
+
+- Added explicit class field declarations and typed constructor/method parameters.
+
+- Introduced local types for paint-node options and schema descriptors.
+
+- Fixed strict type issues around optional booleans, dynamic indexing, and callback parameters.
+
+- Preserved existing behavior while making the panel typecheck cleanly.
+
+- Merged changes from version 2026.5.1 of upstream Fontra
+
+
 ## [0.7.4] - 2026-05-25
 ### fontra-color-support
 
@@ -19,6 +36,7 @@ built on customized version of  [Fontra](https://github.com/mitradranirban/fontr
 - Fixed variable font support: all active masters are now iterated so each source's sibling layer geometry (`bold^color.0`, `light^color.0`, etc.) is copied into the new referenced glyph, enabling correct interpolation across the design space.
 - Fixed V0 sibling layers (`default^color.0`, etc.) not being deleted after conversion, leaving orphaned data in the parent glyph.
 - Fixed the stale root-level `colorv1` safety guard running inside the wrong conditional block, causing it to silently skip cle
+
 ## [0.7.3] - 2025-0519
 ### fontra-color-support
 **Added**
