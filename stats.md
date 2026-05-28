@@ -1,6 +1,8 @@
 
 | version    | Colr.Pak.exe              | ColrPak-Setup-.exe        | ColrPak-Windows-.msi      | colrpak-linux-arm64.tar.gz | colrpak-linux.tar.gz      | colrpak-macos.zip         | colrpak-windows.zip|
 |---|---|---|---|---|---|---|---|
+|v0.7.4     | 0                         | 0                         | 0                         | 1                         | 1                         | 1                         | 0                        |
+|v0.7.3     | 0                         | 0                         | 0                         | 1                         | 1  | 1 | 0
 |v0.7.2     | 7                         | 1                         | 2                         | 2                         | 2                         | 2                         | 0    |
 | v0.7.1     | 0                         | 0                         | 1                         | 1                         | 1                         | 1                         | 0                     |
 | v0.7.0     | 1                         | 0                         | 0                         | 2                         | 1                         | 1                         | 0                     |

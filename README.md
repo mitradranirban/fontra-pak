@@ -26,7 +26,7 @@
   <a href="https://github.com/mitradranirban/colr-pak/wiki/v0VF">ColrV0 Variable Font</a> ·
   <a href="https://github.com/mitradranirban/colr-pak/wiki/v1paint">ColrV1 Visual Paint</a> ·
   <a href="https://github.com/mitradranirban/colr-pak/wiki/named">Named Palettes</a> ·
-  <a href="https://github.com/mitradranirban/colr-pak/wiki/v1VF">Colr V1 masterless variable</a> · <a href="https://github.com/mitradranirban/colr-pak/wiki/emoji">Animated Emoji by Paint Transform</a>
+  <a href="https://github.com/mitradranirban/colr-pak/wiki/v1VF">Colr V1 masterless variable</a> · <a href="https://github.com/mitradranirban/colr-pak/wiki/emoji">Animated Emoji by Paint Transform</a>· <a href="https://github.com/mitradranirban/colr-pak/wiki/v0tov1">Convert Existing Colr v0 Font</a>
 
 
 </p>
@@ -35,8 +35,7 @@
  <a href="https://github.com/mitradranirban/colr-pak/wiki/macOS.md">MacOS Installation</a> ·
  <a href="https://github.com/mitradranirban/colr-pak/wiki/windows">Windows Installation</a></p>
 
-> [!NOTE]
-> ColrPak documentation is a work in progress.
+
 ---
 
 ---
