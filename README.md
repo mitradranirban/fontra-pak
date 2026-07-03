@@ -55,9 +55,9 @@ Your fonts stay entirely on your computer and are never uploaded anywhere.
 |**Linux**| |**Linux**| |**Microsoft Windows**|  |**Mac Os**|
 |---|---|---|---|---|---|---|
 | (x86_64)| |(arm64) | | (10 and 11)||(Apple Silicon M1/M2/M3/M4 and Intel)|
-|[Readymade app{`.tar.gz`}](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.5/colrpak-linux.tar.gz)| |[Readymade app{`.tar.gz`}](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.5/colrpak-linux-arm64.tar.gz)| |[Portable App](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.5/Colr.Pak.exe)| |[App, zipped](https://github.com/mitradranirban/colr-pak/releases/download/latest/colrpak-macos.zip)|
-|[snap](https://snapcraft.io/colrpak)| |[snap](https://snapcraft.io/colrpak)| |[Setup installer](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.5/ColrPak-Setup-0.7.5.exe)| |[Homebrew](https://github.com/mitradranirban/homebrew-tap)|
-|[Flatpak](https://github.com/mitradranirban/colrpak-flatpak)| |[Flatpak](https://github.com/mitradranirban/colrpak-flatpak)| |[msi installer](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.5/ColrPak-Windows-0.7.5.msi)|| - |
+|[Readymade app{`.tar.gz`}](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.6/colrpak-linux.tar.gz)| |[Readymade app{`.tar.gz`}](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.6/colrpak-linux-arm64.tar.gz)| |[Portable App](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.6/Colr.Pak.exe)| |[App, zipped](https://github.com/mitradranirban/colr-pak/releases/download/latest/colrpak-macos.zip)|
+|[snap](https://snapcraft.io/colrpak)| |[snap](https://snapcraft.io/colrpak)| |[Setup installer](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.6/ColrPak-Setup-0.7.6.exe)| |[Homebrew](https://github.com/mitradranirban/homebrew-tap)|
+|[Flatpak](https://github.com/mitradranirban/colrpak-flatpak)| |[Flatpak](https://github.com/mitradranirban/colrpak-flatpak)| |[msi installer](https://github.com/mitradranirban/colr-pak/releases/download/v0.7.6/ColrPak-Windows-0.7.6.msi)|| - |
 
   Read [Installation instruction](INSTALLATION.md) before installing
 

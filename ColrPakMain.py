@@ -19,6 +19,7 @@ from random import random
 from urllib.parse import quote
 from urllib.request import urlopen
 
+import certifi
 import psutil
 from fontra.backends import getFileSystemBackend, newFileSystemBackend
 from fontra.backends.copy import copyFont
@@ -54,9 +55,9 @@ from PyQt6.QtWidgets import (
 )
 
 # Update before each release
-COLR_PAK_VERSION = "0.7.5"
+COLR_PAK_VERSION = "0.7.6"
 # UPDATE whenever merge from upstream fontra
-FONTRA_UPSTREAM_VERSION = "2026.5.1"
+FONTRA_UPSTREAM_VERSION = "2026.6.5"
 
 commonCSS = """
 border-radius: 20px;
@@ -385,7 +386,7 @@ class FontraMainWidget(QMainWindow):
         self.doExportAs(sourcePath, destPath, fileExtension)
 
     def doExportAs(self, sourcePath, destPath, fileExtension):
-        logFilePath = tempfile.NamedTemporaryFile(delete=False).name
+        logFilePath = tempfile.NamedTemporaryFile().name
         sourceExt = sourcePath.suffix.lower()
 
         # .fontra sources cannot export to OTF — COLRv1 requires TTF (glyf) outlines.
@@ -810,6 +811,7 @@ def queueGetter(queue, callback):
 
 
 def main():
+    os.environ["SSL_CERT_FILE"] = certifi.where()
     queue = multiprocessing.Queue()
     host = "localhost"
     port = findFreeTCPPort(host=host)
@@ -826,7 +828,7 @@ def main():
         process = psutil.Process(serverProcess.pid)
         for p in [process] + process.children(recursive=True):
             if sys.platform != "win32":
-                p.send_signal(psutil.signal.SIGINT)
+                p.send_signal(signal.SIGINT)
             else:
                 p.terminate()
 

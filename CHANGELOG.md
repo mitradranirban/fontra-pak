@@ -6,6 +6,15 @@ built on customized version of  [Fontra](https://github.com/mitradranirban/fontr
 [fontra-compile](https://github.com/mitradranirban/fontra-compile).
 
 ---
+## [0.7.6] - 2026-06-30
+
+### Changed
+- Removed macOS-only `queue = multiprocessing.Queue()` usage in `ColrPakMain.main()`
+- Migrated to cross-platform `queue = multiprocessing.Queue()`
+- Set SSL certs path to fix SSL errors during release checks
+### fontra-color-support
+- Merged changes from version 2026.6.5 of upstream
+
 ## [0.7.5] - 2026-05-28
 ### fontra-color-support
 

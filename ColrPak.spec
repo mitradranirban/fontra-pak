@@ -12,9 +12,9 @@ import fontTools.ttLib.tables.otTables
 import fontTools.ttLib.tables.otConverters
 
 # Update before each release
-COLR_PAK_VERSION = "0.7.5"
+COLR_PAK_VERSION = "0.7.6"
 # UPDATE whenever merging from upstream fontra (see: https://github.com/fontra/fontra-pak/releases)
-FONTRA_UPSTREAM_VERSION = "2026.5.1"
+FONTRA_UPSTREAM_VERSION = "2026.6.5"
 
 
 def _ver_tuple(version_str):
